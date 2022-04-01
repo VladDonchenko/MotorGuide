@@ -1,0 +1,35 @@
+<style>
+  html {
+
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.image {
+  position  : relative;
+  width   : 100%; /* for IE 6 */
+}
+
+
+  .hrBar
+{
+  background-image: url(<%= asset_path 'Frame4.png'%>);
+  background-size: cover;
+
+}
+</style>
+
+<body class="hrBar">
+  <div class="container pt-5">
+    <div class="row">
+    <% Automobile(@automobile).each do |automobile| %>
+      
+      <div class="col-3 pt-5">
+        <p><%= link_to automobile.title %></p>
+      </div>
+    <% end %>
+    </div>
+  </div>
+</body>

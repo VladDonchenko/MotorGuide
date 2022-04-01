@@ -1,0 +1,14 @@
+<<div class="container pt-5">
+      <div class="row pt-5">
+
+      <% Automobile.all.each do |automobile| %>
+      <div class="col-3 pt-3">
+  <div class="card bg-light">
+    <div class="card-body text-center">
+      <p class="card-text"><%= automobile.model %></p>
+    </div>
+  </div>
+  </div>
+  <% end %>
+</div>
+</div>
